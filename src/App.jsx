@@ -3,7 +3,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Login from './Forms/Login/Login.jsx'
 import Home from './pages/Home'
-import Register from './Forms/Register'
+import Register from './Forms/Register/Register'
 const App = () => {
   return (
    <>
