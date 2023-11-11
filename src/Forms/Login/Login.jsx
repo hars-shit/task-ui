@@ -10,7 +10,12 @@ const Login = () => {
 
   const handlePassword = (e) => {
     e.preventDefault();
-    setShow(!show);
+    if(data.password){
+        setShow(!show);
+    }
+    else{
+        alert("Enter password first!!")
+    }
   };
 
   const handleForget = (e) => {
