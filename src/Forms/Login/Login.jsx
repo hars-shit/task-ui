@@ -4,6 +4,15 @@ import { MdEmail } from "react-icons/md";
 import "./style.css";
 const Login = () => {
   const [show, setShow] = useState(false);
+
+const handlePassword=(e)=>{
+    e.preventDefault();
+    setShow(!show);
+}
+
+const handleForget=(e)=>{
+    e.preventDefault();
+}
   return (
     <div className="login__container ">
       <div className="login__heading">
@@ -29,14 +38,15 @@ const Login = () => {
         </div>
         <div className="login__function">
         <div className="login__function_items">
-          <button onClick={()=>setShow(!show)}>
+          <button onClick={(e)=> handlePassword(e)}>
             {
                 show ? "Hide Password" : "Show Password"
             }
+           
              </button>
         </div>
         <div className="login__function_items">
-         <button>
+         <button onClick={(e)=>handleForget(e)}>
             Forgot Password?
          </button>
         </div>
