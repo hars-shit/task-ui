@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {FaLock } from "react-icons/fa";
+// import {FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./style.css";
 const Login = () => {
@@ -20,7 +20,7 @@ const Login = () => {
           />
         </div>
         <div className="login__form_box">
-          <FaLock />
+          {/* <FaLock /> */}
           <input
             type="password"
             placeholder="Password"
