@@ -66,7 +66,7 @@ input::placeholder {
  input:focus {
   outline: none;
 }
-button {
+.register__button{
     margin-top: 50px;
   width: 15rem;
   height: 3rem;
