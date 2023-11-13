@@ -34,8 +34,9 @@ const Login = () => {
         }
     }
     else{
-        alert("please provide both email and password")
+        alert("please provide each field")
     }
+    
    
 
   };

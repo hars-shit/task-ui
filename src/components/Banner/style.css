@@ -1,0 +1,104 @@
+.banner__container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 150px;
+}
+/* .banner__image-shoe {
+    width: 40%;
+    height: 100%;
+} */
+.banner__image-shoe img{
+    height: 45rem;
+    width: 60rem;
+
+ }
+  /* .banner__text-area{
+    width: 40%;
+}   */
+.banner__heading{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.banner__heading p{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+.banner__subheading{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: gray;
+}
+.banner__shop button{
+    background-color: #7f4bcf;
+    border: none;
+    border-radius: 5px ;
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-top: 50px;
+}
+@media screen and (max-width:1145px){
+    .banner__container{
+        flex-direction: column;
+    }
+    .banner__heading{
+        align-items: center;
+    }
+    .banner__heading p{
+       font-size: 40px;
+      
+    }
+    .banner__image-shoe img{
+        height: 35rem;
+        width: 50rem;
+    
+     }
+     .banner__subheading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+     }
+     .banner__shop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+     }
+} 
+@media screen and (max-width:700px){
+    .banner__image-shoe img{
+        height: 20rem;
+        width: 25rem;
+        margin-bottom: 20px;
+    
+     }
+}
+@media screen and (max-width:400px){
+    .banner__image-shoe img{
+        height: 15rem;
+        width: 20rem;
+    
+     }
+     .banner__subheading p{
+         margin: 0;
+         margin-bottom: 10px;
+     }
+     .banner__shop button{
+      
+        width: 160px;
+        height: 60px;
+       
+    }
+}

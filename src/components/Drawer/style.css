@@ -1,0 +1,61 @@
+.dailog__container{
+    width: 50%;
+    height: 100%;
+    background-color: #7f4bcf;
+    z-index: 10000;
+   position: fixed;
+   right: 0;
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   flex-direction: column;
+   gap: 20px;
+}
+.dailog__header svg{
+   font-size: 35px;
+   
+}
+.dailog__items{
+    display: flex;
+   align-items: flex-start;
+   height: 40%;
+   justify-content:space-around;
+   flex-direction: column;
+   margin-bottom: 50px;
+}
+.dailog__items button{
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.dailog__heading_follow{
+  margin-left: 20px;
+  width: 80%;
+    align-self: flex-start;
+   
+}
+.dailog__heading_follow p{
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.dailog__icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+.dailog__icons button{
+    border: none;
+    background-color: inherit;
+}
+.dailog__icons button:nth-child(2) svg{
+    font-size: 25px;
+}
+.dailog__icons button:nth-child(4) svg{
+    border-radius: 50%;
+    font-size: 25px;
+}
