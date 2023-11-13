@@ -6,6 +6,8 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const [show, setShow] = useState(false);
   const [data, setData] = useState({email:"",password:""});
+
+  const[shoe_style,setShoe_style]=useState('');
   const navigate=useNavigate();
 
   const handlePassword = (e) => {
@@ -20,6 +22,11 @@ const Login = () => {
 
   const handleForget = (e) => {
     e.preventDefault();
+   let answer = prompt("Enter your favorite shoe style ?");
+   if(answer != null){
+       console.log(answer)
+       setShoe_style(answer);
+   }
   };
 
   const handleLogin = (e) => {
@@ -36,7 +43,7 @@ const Login = () => {
     else{
         alert("please provide each field")
     }
-    
+
    
 
   };
